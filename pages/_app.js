@@ -3,9 +3,9 @@ import {
   LivepeerConfig,
   studioProvider,
 } from "@livepeer/react";
-import "../styles/globals.css"
+import "../styles/globals.css";
 const LivepeerClient = createReactClient({
-  provider: studioProvider({ apiKey: "1d8e8f2b-9a61-4d70-ba19-99a5981355d0" }),
+  provider: studioProvider({ apiKey: process.env.NEXT_PUBLIC_LIVEPEER }),
 });
 
 function MyApp({ Component, pageProps }) {
