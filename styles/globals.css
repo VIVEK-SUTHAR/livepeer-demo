@@ -14,7 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
-
+body {
+  background-color: black;
+}
 .container {
   background-color: black;
   height: 100vh;
@@ -50,10 +52,65 @@ a {
   margin: auto;
   padding: 8px;
   border: 1px solid aliceblue;
-  background-color:aliceblue;
+  background-color: aliceblue;
   font-size: 18px;
   border-radius: 6px;
 }
-.info{
+.info {
   color: aliceblue;
+}
+.player {
+  margin: 5% auto;
+  border-radius: 4px;
+  border: 1px solid greenyellow;
+  height: 70vh;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.stats {
+  margin-inline-start: 2%;
+  background-color: rgba(255, 255, 255, 0.08);
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-inline: 2%;
+}
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment > button {
+  padding: 12px;
+  border: 1px solid greenyellow;
+  background-color: rgba(255, 255, 255, 0.09);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: aliceblue;
+  font-size: 14px;
+}
+.inputcomment {
+  width: 100%;
+  align-self: flex-end;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.inputcomment:focus{
+    border: 1px solid greenyellow;
+  outline: none;
+
+}
+@media (max-width: 600px) {
+  .player {
+    width: 100%;
+    height: auto;
+  }
 }
